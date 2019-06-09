@@ -8,6 +8,7 @@ import com.barros.buscarcep.business.CepBusiness
 import com.barros.buscarcep.business.CepListener
 import com.barros.buscarcep.data.Repository
 import com.barros.buscarcep.model.PostalCode
+import kotlin.coroutines.coroutineContext
 
 class CepViewModel(private val repository: Repository,
                    application: Application): AndroidViewModel(application), CepListener {
@@ -38,5 +39,9 @@ class CepViewModel(private val repository: Repository,
         } else {
             setError("CEP não encontrado!")
         }
+    }
+
+    override fun errorPostalCode() {
+        setError("Ocorreu um problema ao consultar o CEP!")
     }
 }

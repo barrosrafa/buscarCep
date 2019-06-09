@@ -13,10 +13,14 @@ class CepBusiness(
             {
                 it?.let { it1 -> onResponse(it1) }
         },
-            {error -> PostalCode()})
+            {onError()})
     }
 
     private fun onResponse(response: PostalCode) {
         businessListener.responsePostalCode(response)
+    }
+
+    private fun onError() {
+        businessListener.errorPostalCode()
     }
 }

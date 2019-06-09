@@ -7,4 +7,6 @@ interface CepListener {
     fun searchPostalCode(cep: String)
 
     fun responsePostalCode(postalCode: PostalCode)
+
+    fun errorPostalCode()
 }
