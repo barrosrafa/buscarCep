@@ -60,10 +60,10 @@ public class PostalCode {
     @Override
     public String toString() {
         return "CEP: " + getCep()
-                + "/nLogradouro: " + getLogradouro()
-                + "/nComplemento: " + getComplemento()
-                + "/nBairro: " + getBairro()
-                + "/nLocalidade: " + getLocalidade()
-                + "/nUf: " + getUf();
+                + "\nLogradouro: " + getLogradouro()
+                + "\nComplemento: " + getComplemento()
+                + "\nBairro: " + getBairro()
+                + "\nLocalidade: " + getLocalidade()
+                + "\nUf: " + getUf();
     }
 }
