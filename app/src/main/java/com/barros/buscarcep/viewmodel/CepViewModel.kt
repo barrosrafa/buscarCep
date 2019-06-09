@@ -21,11 +21,22 @@ class CepViewModel(private val repository: Repository,
         _postalCode.postValue(postalCode)
     }
 
+    private val _error = MutableLiveData<String>()
+    val getError: LiveData<String>
+        get() = _error
+    private fun setError(error: String) {
+        _error.postValue(error)
+    }
+
     override fun searchPostalCode(postalCode: String) {
         business.callApiPostalCode(postalCode)
     }
 
     override fun responsePostalCode(postalCode: PostalCode) {
-        setPostalCode(postalCode)
+        if(postalCode.cep != null && !postalCode.cep.isEmpty()) {
+            setPostalCode(postalCode)
+        } else {
+            setError("CEP não encontrado!")
+        }
     }
 }

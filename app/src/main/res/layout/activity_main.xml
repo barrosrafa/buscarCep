@@ -10,6 +10,7 @@
               android:layout_height="wrap_content"
               android:id="@+id/etPostalCode"
               android:digits="0123456789"
+              android:maxLength="8"
               android:hint="Digite o CEP"
               android:inputType="number"
               app:layout_constraintTop_toTopOf="parent"
@@ -43,5 +44,13 @@
               android:layout_marginRight="@dimen/margintextview"
               android:layout_marginTop="@dimen/margintextview"
     />
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_from_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btBuscar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

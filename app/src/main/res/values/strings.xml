@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Buscar CEP</string>
     <string name="find_cep">Buscar CEP</string>
+    <string name="error_incorrect_zip">Digite um CEP valido</string>
 </resources>
