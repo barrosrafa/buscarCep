@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen
+            name="marginbutton">50dp</dimen>
+    <dimen
+            name="marginedittext">50dp</dimen>
+    <dimen
+            name="margintextview">50dp</dimen>
+</resources>
