@@ -59,11 +59,11 @@ public class PostalCode {
 
     @Override
     public String toString() {
-        return "PostalCode: " + getCep()
+        return "CEP: " + getCep()
                 + "/nLogradouro: " + getLogradouro()
-                + "/nComplemento: " + getLogradouro()
-                + "/nBairro: " + getLogradouro()
-                + "/nLocalidade: " + getLogradouro()
-                + "/nUf: " + getLogradouro();
+                + "/nComplemento: " + getComplemento()
+                + "/nBairro: " + getBairro()
+                + "/nLocalidade: " + getLocalidade()
+                + "/nUf: " + getUf();
     }
 }

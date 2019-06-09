@@ -12,7 +12,7 @@ import com.barros.buscarcep.model.PostalCode
 class CepViewModel(private val repository: Repository,
                    application: Application): AndroidViewModel(application), CepListener {
 
-    internal var business: CepBusiness = CepBusiness(repository, this)
+    private var business: CepBusiness = CepBusiness(repository, this)
 
     private val _postalCode = MutableLiveData<PostalCode>()
     val getPostalCode: LiveData<PostalCode>
